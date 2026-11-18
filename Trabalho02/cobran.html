@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trabalho 02 - Desenvolvimento Web II</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #263445;
+    }
+
+    .container {
+      max-width: 1150px;
+    }
+
+    .titulo-principal {
+      color: #244b91;
+      font-weight: 700;
+      border-bottom: 3px solid #244b91;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+
+    .bloco-tabela {
+      background: #fff;
+      border: 1px solid #d7e0ea;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 35px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+    }
+
+    .titulo-tabela {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #34445b;
+      margin-bottom: 20px;
+    }
+
+    .table {
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
+
+    .table th, .table td {
+      text-align: center;
+      padding: 13px 10px;
+    }
+
+    .table thead th {
+      color: #fff;
+      font-size: .9rem;
+      min-width: 145px;
+    }
+
+    .table thead th:first-child {
+      min-width: 230px;
+    }
+
+    .categoria {
+      text-align: left !important;
+      font-weight: 600;
+      background-color: #eef7fb !important;
+    }
+
+    .lote-promocional { background-color: #a8f59c !important; }
+    .lote-um { background-color: #9ee8fa !important; }
+    .lote-dois { background-color: #7cebd5 !important; }
+    .lote-tres { background-color: #ffdc86 !important; }
+
+    .subtexto {
+      display: block;
+      font-size: .78rem;
+      font-weight: 400;
+      margin-top: 7px;
+      line-height: 1.35;
+    }
+
+    .valor {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .botao-cursos {
+      display: block;
+      width: fit-content;
+      margin: 25px auto 0;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .bloco-tabela { padding: 15px; }
+      .titulo-tabela { font-size: 1rem; }
+      .table th, .table td { padding: 9px 7px; font-size: .82rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container py-5">
+    <h1 class="titulo-principal text-center">Trabalho 02 - Desenvolvimento Web II</h1>
+
+    <!-- TABELA 1: INSCRIÇÃO E LOTES -->
+    <section class="bloco-tabela">
+      <h2 class="titulo-tabela">Adesão ao Congresso Brasileiro de Nutrição</h2>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th class="bg-warning text-dark">
+                Categoria de inscrição
+                <span class="subtexto">Confira a sua categoria e as opções de pagamento</span>
+              </th>
+              <th class="bg-success">
+                Lote promocional
+                <span class="subtexto"><strong>Encerrado</strong><br>até 30/09/2025<br>parcelado em até 4x</span>
+              </th>
+              <th class="bg-info">
+                Lote 1º
+                <span class="subtexto"><strong>Encerrado</strong><br>até 09/01/2026<br>parcelado em até 3x</span>
+              </th>
+              <th class="bg-success">
+                Lote 2º
+                <span class="subtexto"><strong>Encerrado</strong><br>até 30/04/2026<br>parcelado em até 2x</span>
+              </th>
+              <th class="bg-danger">
+                Lote 3º
+                <span class="subtexto">até 11/05/2026<br>e no local à vista</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="categoria">Nutricionista Sócio*</td>
+              <td class="lote-promocional valor">R$ 450,00</td>
+              <td class="lote-um valor">R$ 530,00</td>
+              <td class="lote-dois valor">R$ 690,00</td>
+              <td class="lote-tres valor">R$ 850,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Nutricionista Não Sócio</td>
+              <td class="lote-promocional valor">R$ 650,00</td>
+              <td class="lote-um valor">R$ 750,00</td>
+              <td class="lote-dois valor">R$ 850,00</td>
+              <td class="lote-tres valor">R$ 990,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Pós-Graduando Sócio**<br>(Estudante de pós-graduação)</td>
+              <td class="lote-promocional valor">R$ 450,00</td>
+              <td class="lote-um valor">R$ 550,00</td>
+              <td class="lote-dois valor">R$ 650,00</td>
+              <td class="lote-tres valor">R$ 800,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Pós-Graduando Não Sócio<br>(Estudante de pós-graduação)</td>
+              <td class="lote-promocional valor">R$ 600,00</td>
+              <td class="lote-um valor">R$ 700,00</td>
+              <td class="lote-dois valor">R$ 800,00</td>
+              <td class="lote-tres valor">R$ 950,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Técnico em Nutrição<br>e Dietética Sócio*</td>
+              <td class="lote-promocional valor">R$ 390,00</td>
+              <td class="lote-um valor">R$ 490,00</td>
+              <td class="lote-dois valor">R$ 590,00</td>
+              <td class="lote-tres valor">R$ 750,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Técnico em Nutrição<br>e Dietética Não Sócio</td>
+              <td class="lote-promocional valor">R$ 550,00</td>
+              <td class="lote-um valor">R$ 650,00</td>
+              <td class="lote-dois valor">R$ 750,00</td>
+              <td class="lote-tres valor">R$ 900,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Estudante de Nutrição Sócio*</td>
+              <td class="lote-promocional valor">R$ 330,00</td>
+              <td class="lote-um valor">R$ 400,00</td>
+              <td class="lote-dois valor">R$ 500,00</td>
+              <td class="lote-tres valor">R$ 650,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Estudante de Nutrição Não Sócio</td>
+              <td class="lote-promocional valor">R$ 450,00</td>
+              <td class="lote-um valor">R$ 550,00</td>
+              <td class="lote-dois valor">R$ 650,00</td>
+              <td class="lote-tres valor">R$ 800,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Outros profissionais</td>
+              <td class="lote-promocional valor">R$ 700,00</td>
+              <td class="lote-um valor">R$ 800,00</td>
+              <td class="lote-dois valor">R$ 900,00</td>
+              <td class="lote-tres valor">R$ 1.000,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TABELA 2: CURSOS PRÉ-CONGRESSO -->
+    <section class="bloco-tabela">
+      <h2 class="titulo-tabela">Adesão aos Cursos Pré-Congresso</h2>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th class="bg-warning text-dark">Categoria</th>
+              <th class="bg-info">Valor dos cursos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="categoria">Profissionais (inscritos no congresso)</td>
+              <td class="lote-um valor">R$ 80,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Estudantes (inscritos no congresso)</td>
+              <td class="lote-um valor">R$ 60,00</td>
+            </tr>
+            <tr>
+              <td class="categoria">Inscrição somente no curso<br>(sem adesão ao congresso)</td>
+              <td class="lote-um valor">R$ 100,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a class="btn btn-success botao-cursos" href="https://conbran.com.br/" target="_blank" rel="noopener">
+        Conheça nossos cursos
+      </a>
+    </section>
+  </main>
+
+  
+</body>
+</html>
